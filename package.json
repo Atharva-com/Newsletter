@@ -1,5 +1,6 @@
 {
   "name": "newsapp",
+  "homepage": "https://AB-devil.github.io/newsletter",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
