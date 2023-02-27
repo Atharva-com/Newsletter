@@ -70,7 +70,7 @@ export class News extends Component {
             articles: this.state.articles.concat(parsedData.articles),
             totalResult: parsedData.totalResults,
             page: this.state.page + 1,
-
+            loading: false
         })
     };
     render() {
