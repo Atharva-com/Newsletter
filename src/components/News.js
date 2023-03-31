@@ -81,8 +81,8 @@ export class News extends Component {
                 <InfiniteScroll
                     dataLength={20}
                     next={this.fetchMoreData}
-                    hasMore={this.state.articles.length !== this.state.totalResult}
-                    loader={this.state.articles.length !== this.state.totalResult && <Spinner />} >
+                    hasMore={20 !== this.state.totalResult}
+                    loader={20 !== this.state.totalResult && <Spinner />} >
 
                     <div className="container my-5">
                         <div className="row">
