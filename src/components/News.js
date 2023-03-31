@@ -79,7 +79,7 @@ export class News extends Component {
                 <h1 className="text-center container pt-5 mt-5" style={{ fontWeight: '600' }}>NewsApp - Top {this.props.heading} Headlines</h1>
                 {this.state.loading && <Spinner/>}
                 <InfiniteScroll
-                    dataLength={this.state.articles.length}
+                    dataLength={20}
                     next={this.fetchMoreData}
                     hasMore={this.state.articles.length !== this.state.totalResult}
                     loader={this.state.articles.length !== this.state.totalResult && <Spinner />} >
